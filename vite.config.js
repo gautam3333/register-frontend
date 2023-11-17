@@ -6,7 +6,13 @@ import eslint from 'vite-plugin-eslint';
 export default defineConfig({
   server: {
     // proxy: { '/api': 'http://localhost:3000' },
-    proxy: { '/api': 'https://register-backend-vxw4.onrender.com' },
+    // proxy: { '/api': 'https://register-backend-vxw4.onrender.com' },
+    proxy: {
+      '/api': {
+        target: 'http://register-backend-vxw4.onrender.com',
+        changeOrigin: true,
+      },
+    },
   },
   plugins: [react(), eslint()],
 });
