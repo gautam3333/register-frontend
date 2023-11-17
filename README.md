@@ -1,8 +1,14 @@
-# React + Vite
+## Registration Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a robust registration form built using React for the front-end, Node.js for the back-end and MongoDB for database management. The primary focus is to provide a secure and user-friendly registration process while ensuring the confidentiality of user passwords through hashing mechanisms.
 
-Currently, two official plugins are available:
+**Key features:**
+- **User-Friendly Interface**: The registration form is designed for simplicity and ease of use.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Security:** Hashing passwords prior to storage in MongoDB ensures that sensitive information remains protected, enhancing the overall security of user data. 
+
+**Tech Stacks and Libraries**
+- React.js
+- Node.js and Express
+- bcryptjs (library)
+- react-hot-toast (library)
